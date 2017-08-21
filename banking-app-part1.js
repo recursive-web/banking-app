@@ -8,7 +8,7 @@ function deposit(account, amount) {
 
 function withdraw(account, amount) {
   if (amount > account.balance) {
-    console.log('insufficient funds');
+    console.log('Operaton failed: insufficient funds');
     return;
   }
   account.balance -= amount;
